@@ -1,0 +1,1 @@
+Number of wrong recognitions in 3 input image(s) = 3

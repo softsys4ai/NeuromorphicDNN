@@ -1,0 +1,10 @@
+$DATA1 SOURCE='HSPICE' VERSION='P-2019.06-SP1 linux64' PARAM_COUNT=0
+.TITLE '*fully-connected classifier'
+ pwr              powr             vout0            vout1           
+ vout2            vout3            vout4            vout5           
+ vout6            vout7            vout8            vout9           
+ temper           alter#          
+ -1.820e-03        1.796e-03          0.7931           0.7931       
+    0.7931           0.7931           0.7931           0.7931       
+    0.7931           0.7931           0.7931           0.7931       
+   25.0000        1               
