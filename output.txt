@@ -8,70 +8,8 @@ Using: /home/pjamshid/synopsys/synopsys/hspice/P-2019.06-SP1/hspice/linux64/hspi
   this software is strictly prohibited.
   Input File: classifier.sp                                                     
   Command line options: /home/pjamshid/synopsys/synopsys/hspice/P-2019.06-SP1/hspice/linux64/hspice classifier.sp
-  Start time: Thu Feb 13 17:50:35 2020
+  Start time: Thu Jun 18 15:45:37 2020
  lic:  
  lic: FLEXlm: SDK_12.3 
  lic: USER:   pjamshid             HOSTNAME: pjamshid-desktop 
- lic: HOSTID: 8cec4b7befeb         PID:      5619 
- lic: Using FLEXlm license file: 
- lic: 27020@saratoga.cse.sc.edu 
- lic: Checkout 1 hspice 
- lic: License/Maintenance for hspice will expire on 14-nov-2021/2019.06 
- lic: 4(in_use)/50(total) FLOATING license(s) on SERVER 27020@saratoga.cse.sc.edu 
- lic:   
-  **warning** (diff.sp:7) nonstandard number 5e-12k is interpreted as 5e-12
-  **warning** (diff.sp:8) nonstandard number 5e-12k is interpreted as 5e-12
-  **warning** (././modelfiles/hp/14nfet.pm:4) Model nfet device geometries will not be checked against the limits set by lmin, lmax, nfinmin and nfinmax. To enable this check, add a period(.) to the model name(i.e. enable model selector).
- **error** stop simulation by signal SIGINT = 2
-
-1****** HSPICE -- P-2019.06-SP1 linux64 (Aug 29 2019) ******                    
- ******  
- *fully-connected classifier
-
- ****** job statistics summary tnom=  25.000 temp=  25.000 ******
-  
- ******  Machine Information  ******
- CPU:
- model name	: Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
- cpu MHz	: 4299.784
-  
- OS:
- Linux version 4.15.0-76-generic (buildd@lcy01-amd64-029) (gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)) #86-Ubuntu SMP Fri Jan 17 17:24:28 UTC 2020
-
-
-  ******  HSPICE Threads Information  ******
-
-  Command Line Threads Count :     1
-  Available CPU Count        :    12
-  Actual Threads Count       :     1
-
-
-  ******  Circuit Statistics  ******
-  # nodes       =       0 # elements   =  157839
-  # resistors   =  157053 # capacitors =       0 # inductors   =       0
-  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
-  # cccs        =       0 # ccvs       =       0 # volt_srcs   =     786
-  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
-  # jfets       =       0 # mosfets    =       0 # U elements  =       0
-  # T elements  =       0 # W elements =       0 # B elements  =       0
-  # S elements  =       0 # P elements =       0 # va device   =       0
-  # vector_srcs =       0 # N elements =       0
-
-
-  ******  Runtime Statistics (seconds)  ******
-
-  analysis           time    # points   tot. iter  conv.iter
-  op point           0.00           1           0
-  readin             1.01
-  errchk             0.00
-  setup              0.00
-  output             0.00
-
-
-           peak memory used        548.58 megabytes
-           total cpu time            1.17 seconds
-           total elapsed time        1.22 seconds
-           job started at     17:50:35 02/13/2020
-           job ended   at     17:50:36 02/13/2020
- lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.03(s)
+ lic: HOSTID: 8cec4b7befeb         PID:      25750 

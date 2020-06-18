@@ -96,14 +96,14 @@ in_data=f.readlines()
 label=f2.readlines()
 noise=0.000;   #maximum noise amplitude in Volt
 weight_var=0.0; #variation in the resistance of the synapses in Kohms
-testnum=100
+testnum=7
 firstimage=0; #start the test inputs from this image
 Vdd=0.8
 nodes=[784,100,10] #Network Topology, which should be similar to what is defined in MATLAB
 lMTJ=100e-9
 wMTJ=60e-9
-RA=100
-TMR=5
+RA=2e-11
+TMR=300.0
 err=[] 
 avgpower=0
 avgpwrneuron=0
@@ -183,8 +183,14 @@ hour=math.floor(minute/60)
 tmin=minute-(60*hour)
 tsec=second-(hour*3600)-(tmin*60)
 
-print("Program Execution Time = %d hours %d minutes %d seconds"%(hour,tmin,tsec))
+print("Program Execution Time = %d hours %d minutes %d seconds"%(hour,tmin,tsec)) 
+with open("cur_config.yaml","r") as fconf:
+    cfg=yaml.load(fconf)
+cur=cfg["cur_config"]
+cur.extend([sum(err)/float(testnum), power/float(testnum), total_power/float(testnum),second])
 
+df=pd.DataFrame([cur])
+df.to_csv("result.csv",header=False, index=False)
 
 
 		

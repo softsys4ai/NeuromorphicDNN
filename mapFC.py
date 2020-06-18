@@ -16,7 +16,7 @@ import mapLayer
 def mapFC(nodes,length,weight_var):
 	f=open("classifier.sp", "w")
 	f.write("*Fully-connected Classifier\n")
-	f.write(".lib './models' ptm14hp\n")    #the transistor library can be changed here (of course in this current format the weighted array does not use a transistor)
+	f.write(".lib './models' ptm14hp\n")    
 	f.write(".include 'diff.sp'\n")
 	f.write(".include 'diff2.sp'\n")
 	#f.write(".include 'diff3.sp'\n")

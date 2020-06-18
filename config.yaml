@@ -1,6 +1,6 @@
 config:
     design_space:
-        testnum: [100]
+        testnum: [10]
         RA: [5e-12, 10e-12, 15e-12, 
             20e-12]
         TMR: [100, 150, 200, 

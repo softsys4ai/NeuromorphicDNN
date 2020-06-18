@@ -1,10 +1,11 @@
 import os
 
 class TuneParam:
-    def __init__(self, testnum, RA, 
-                 TMR, gain1, gain2):
+    def __init__(self, cur_config):
         print ("[STATUS]: initializing TuneParam class")
-        
+        print (cur_config)
+        testnum, RA, TMR, gain1, gain2=cur_config.tolist()[0]
+        testnum=int(testnum)
         self.update_testFC (RA,TMR,testnum)
         self.update_diff (gain1)
         self.update_diff2 (gain2)
