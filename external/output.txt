@@ -8,8 +8,8 @@ Using: /home/pjamshid/synopsys/synopsys/hspice/P-2019.06-SP1/hspice/linux64/hspi
   this software is strictly prohibited.
   Input File: classifier.sp                                                     
   Command line options: /home/pjamshid/synopsys/synopsys/hspice/P-2019.06-SP1/hspice/linux64/hspice classifier.sp
-  Start time: Thu Jun 18 15:45:37 2020
+  Start time: Thu Jun 18 23:47:37 2020
  lic:  
  lic: FLEXlm: SDK_12.3 
  lic: USER:   pjamshid             HOSTNAME: pjamshid-desktop 
- lic: HOSTID: 8cec4b7befeb         PID:      25750 
+ lic: HOSTID: 8cec4b7befeb         PID:      32390 

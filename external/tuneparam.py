@@ -1,11 +1,14 @@
 import os
-
+import sys
 class TuneParam:
-    def __init__(self, cur_config):
+    def __init__(self, cur_config, mode):
         print ("[STATUS]: initializing TuneParam class")
-        print (cur_config)
-        testnum, RA, TMR, gain1, gain2=cur_config.tolist()[0]
+        if mode=="BO":
+            testnum, RA, TMR, gain1, gain2=cur_config.tolist()[0]
+        else:
+            testnum, RA, TMR, gain1, gain2=cur_config.tolist()
         testnum=int(testnum)
+        os.chdir(os.path.dirname(__file__))
         self.update_testFC (RA,TMR,testnum)
         self.update_diff (gain1)
         self.update_diff2 (gain2)

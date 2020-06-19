@@ -4,7 +4,7 @@ import itertools
 import GPyOpt
 import numpy as np
 import pandas as pd
-from tuneparam import TuneParam
+from external.tuneparam import TuneParam
 from GPyOpt.methods import BayesianOptimization
 
 class GenerateParam:
@@ -16,6 +16,7 @@ class GenerateParam:
 
        self.NUM_INIT=20
        self.NUM_CONF_OPTIONS=5
+       self.mode=mode
        if mode == "RUN":
            # get all the configurations in the design space
            self.confs=self.set_design_space()
@@ -28,7 +29,7 @@ class GenerateParam:
                    yaml.dump(dict(cur_config=cur_init_conf),curfp,default_flow_style=False)
                print ("[STATUS]: current configuration: {0} {1} {2} {3} {4}".format(
                              testnum, RA, TMR, gain1, gain2))
-               self.tp=TuneParam(np.array(cur_init_conf))
+               self.tp=TuneParam(np.array(cur_init_conf),self.mode)
        elif mode == "BO":
            self.get_bounds()
            self.run_bo()
@@ -37,7 +38,7 @@ class GenerateParam:
     
     def func(self, cur_config):
         """This function is used to measure next config"""
-        TuneParam(cur_config)
+        TuneParam(cur_config, self.mode)
     def get_bounds(self):
         """This function is used to get bounds"""
         self.bounds = [

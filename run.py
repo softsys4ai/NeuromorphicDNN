@@ -1,2 +1,2 @@
-from generate_param import GenerateParam
+from src.generate_param import GenerateParam
 gp=GenerateParam("BO")
